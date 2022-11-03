@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Questrial', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply text-stone-400;
+  }
 }
 
 a {
@@ -13,6 +27,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.handwriting {
+  font-family: 'Nanum Brush Script', cursive;
+  @apply text-3xl text-stone-500;
 }
 
 @media (prefers-color-scheme: dark) {

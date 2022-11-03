@@ -1,0 +1,62 @@
+const days = [
+  {
+    date: 'july 26, tue',
+    items: [
+      {
+        indicator: '•',
+        name: 'hit the gym',
+      },
+      {
+        indicator: '*',
+        name: 'reach out to Marian on tg',
+      },
+      {
+        indicator: '*',
+        name: 'ask Marian out',
+      },
+      {
+        indicator: '•',
+        name: 'invite Marian to comedy show',
+      },
+      {
+        indicator: '-',
+        name: "she\'s single!",
+      },
+      {
+        indicator: '-',
+        name: 'her Belgium scholarship :/',
+      },
+      {
+        indicator: '-',
+        name: 'show Marian standup recording(?!)',
+      },
+    ],
+  },
+  {
+    date: 'july 27, wed',
+    items: [
+      {
+        indicator: '•',
+        name: 'confirm dinner with Marian (fingers-crossed)',
+      },
+      {
+        indicator: '-',
+        name: 'check Sensei parking on google maps',
+      },
+      {
+        indicator: '*',
+        name: 'dinner with Marian',
+      },
+      {
+        indicator: '-',
+        name: 'jokingly tease her about being loud loool',
+      },
+      {
+        indicator: '-',
+        name: 'invite her for a nightcap?',
+      },
+    ],
+  },
+];
+
+export default days;
