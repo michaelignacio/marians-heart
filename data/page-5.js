@@ -7,8 +7,28 @@ const days = [
         name: 'sort out car docs',
       },
       {
+        indicator: '•',
+        name: 'hit the gym',
+      },
+      {
         indicator: '-',
         name: 'talasalitaan w/ Marian: pisi, kubli, antipara',
+      },
+      {
+        indicator: '-',
+        name: "Marian's dimples are insaaane",
+      },
+      {
+        indicator: '-',
+        name: 'she looooves pork',
+      },
+      {
+        indicator: '-',
+        name: 'nice to be w/ someone w/ the same love languages',
+      },
+      {
+        indicator: '-',
+        name: "ask her mom's favorite food",
       },
     ],
   },
@@ -30,6 +50,10 @@ const days = [
       {
         indicator: '>',
         name: 'get diploma',
+      },
+      {
+        indicator: '-',
+        name: "assure Marian I'll never, ever, get cold feet",
       },
     ],
   },

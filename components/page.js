@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Page({ log, spotify, featured, pageNum, bujoPic }) {
+export default function Page({ log, spotify, featured, pageNum, bujoPic, bujoClass }) {
   return (
-    <div className="flex justify-center p-5 gap-5">
-      <div className="max-w-2xl w-full">
-        <div className="flex flex-col bg-amber-100 p-14 rounded-xl">
+    <div className="flex flex-col lg:flex-row justify-center p-5 gap-5">
+      <div className="lg:max-w-lg xl:max-w-2xl w-full">
+        <div className="flex flex-col bg-amber-100 p-10 lg:p-14 rounded-xl">
           <div className="handwriting">
             <Link href="/" className="text-xl flex items-center mb-10">
               ← table of contents
@@ -23,8 +23,8 @@ export default function Page({ log, spotify, featured, pageNum, bujoPic }) {
                                 ? 'line-through text-gray-400'
                                 : ''
                             }
-                            ${item.indicator == '*' ? 'text-red-600' : ''}
-                            ${item.indicator == '-' ? 'text-sky-400' : ''}
+                            ${item.indicator == '*' ? 'text-red-600 ml-1' : ''}
+                            ${item.indicator == '-' ? 'text-sky-400 ml-1' : ''}
                         `}
                       >
                         <div className="w-12 text-center leading-10">
@@ -37,12 +37,17 @@ export default function Page({ log, spotify, featured, pageNum, bujoPic }) {
                 </div>
               );
             })}
-            {bujoPic && <Image src={bujoPic} className="my-5 rounded-xl w-72 mx-auto" />}
+            {bujoPic && (
+              <Image
+                src={bujoPic}
+                className={`my-5 rounded-xl w-72 mx-auto ${bujoClass}`}
+              />
+            )}
             <div className="flex justify-between text-2xl mt-10 italic">
               {pageNum > 1 && (
                 <Link href={`page-${parseInt(pageNum) - 1}`}>previous</Link>
               )}
-              {pageNum < 8 && (
+              {pageNum < 7 && (
                 <Link
                   className="ml-auto"
                   href={`page-${parseInt(pageNum) + 1}`}
@@ -54,9 +59,13 @@ export default function Page({ log, spotify, featured, pageNum, bujoPic }) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-1/5">
+      <div className="flex flex-col lg:w-1/2 xl:w-1/5">
         <div className="w-full">{spotify}</div>
-        {featured && <Image src={featured} className="my-5 rounded-xl" />}
+        {featured && (
+          <Link href={featured}>
+            <Image src={featured} className="my-5 rounded-xl w-full" />
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -14,6 +14,6 @@ const spotify = (
   ></iframe>
 );
 
-export default function Day2() {
+export default function Page2() {
   return <Page log={log} spotify={spotify} featured={featured} pageNum="2" />;
 }
