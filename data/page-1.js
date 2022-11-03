@@ -24,7 +24,7 @@ const days = [
       },
       {
         indicator: '-',
-        name: 'her Belgium scholarship :/',
+        name: 'her masters in Antwerp :/',
       },
       {
         indicator: '-',

@@ -1,6 +1,7 @@
-import log from '../data/day-2'
+import log from '../data/page-3'
 import Page from '../components/page'
 import featured from '../public/keeper.png'
+import bujoPic from '../public/first-date.jpg'
 
 const spotify = (
   <iframe
@@ -15,5 +16,5 @@ const spotify = (
 );
 
 export default function Day3() {
-  return <Page log={log} spotify={spotify} featured={featured} />;
+  return <Page log={log} spotify={spotify} featured={featured} pageNum="3" bujoPic={bujoPic} />;
 }

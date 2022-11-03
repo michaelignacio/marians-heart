@@ -15,5 +15,5 @@ const spotify = (
 );
 
 export default function Day1() {
-  return <Page log={log} spotify={spotify} featured={featured} />;
+  return <Page log={log} spotify={spotify} featured={featured} pageNum="1" />;
 }
