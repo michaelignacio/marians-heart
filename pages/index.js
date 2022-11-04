@@ -32,6 +32,7 @@ export default function Home() {
                   <Link
                     href={`page-${item.page}`}
                     className="leading-10 flex gap-5"
+                    key={item.page}
                   >
                     <div className="border-b w-28 text-center">{item.page}</div>
                     <div className="border-b grow lg:pl-16">{item.topic}</div>
