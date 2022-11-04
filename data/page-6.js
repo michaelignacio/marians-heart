@@ -36,6 +36,10 @@ const days = [
         name: 'weekend date with Marian!',
       },
       {
+        indicator: '*',
+        name: 'DTR',
+      },
+      {
         indicator: '-',
         name: "check out Conti's food",
       },

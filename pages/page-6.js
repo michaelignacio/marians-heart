@@ -1,6 +1,7 @@
 import log from '../data/page-6'
 import Page from '../components/page'
 import featured from '../public/umaapaw.png'
+import bujoPic from '../public/capy.jpg'
 
 const spotify = (
   <iframe
@@ -15,5 +16,5 @@ const spotify = (
 );
 
 export default function Page6() {
-  return <Page log={log} spotify={spotify} pageNum="6" featured={featured} />;
+  return <Page log={log} spotify={spotify} pageNum="6" bujoPic={bujoPic} featured={featured} />;
 }
