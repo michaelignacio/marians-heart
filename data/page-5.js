@@ -53,7 +53,7 @@ const days = [
       },
       {
         indicator: '-',
-        name: "assure Marian I'll never, ever, get cold feet",
+        name: "assure Marian I'll never, ever, get cold feet again",
       },
     ],
   },

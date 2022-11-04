@@ -49,7 +49,7 @@ const days = [
       },
       {
         indicator: '-',
-        name: "she'll be at Cebu whole week next week :/ ",
+        name: "she'll be in Cebu whole week next week :/ ",
       },
       {
         indicator: '*',
