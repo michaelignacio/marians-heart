@@ -19,7 +19,7 @@ export default function Page5() {
   return (
     <>
       <Head>
-        <title>Marian's Heart - Page 5</title>
+        <title>Marian&apos;s Heart - Page 5</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Page log={log} spotify={spotify} pageNum="5" featured={featured} />

@@ -19,7 +19,7 @@ export default function Page2() {
   return (
     <>
       <Head>
-        <title>Marian's Heart - Page 2</title>
+        <title>Marian&apos;s Heart - Page 2</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Page log={log} spotify={spotify} featured={featured} pageNum="2" />

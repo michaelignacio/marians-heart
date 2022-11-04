@@ -20,7 +20,7 @@ export default function Page7() {
   return (
     <>
       <Head>
-        <title>Marian's Heart - Page 7</title>
+        <title>Marian&apos;s Heart - Page 7</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Page
