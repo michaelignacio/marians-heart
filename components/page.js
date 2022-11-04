@@ -33,8 +33,7 @@ export default function Page({ log, spotify, featured, pageNum, bujoPic, bujoCla
                           {item.indicator}
                         </div>
                         <div
-                          className={`grow leading-10
-                            ${item.indicator == '•' ? 'relative -left-2' : ''}`}
+                          className={`grow leading-10`}
                         >
                           {item.name}
                         </div>

@@ -8,15 +8,11 @@ const days = [
       },
       {
         indicator: '*',
-        name: 'reach out to Marian on tg',
+        name: 'gather courage and reach out to Marian on tg',
       },
       {
         indicator: '*',
         name: 'ask Marian out',
-      },
-      {
-        indicator: '•',
-        name: 'invite Marian to comedy show',
       },
       {
         indicator: '-',
