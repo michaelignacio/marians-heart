@@ -43,7 +43,9 @@ export default function Home() {
             <div className="title">
               <div className="leading-10 flex gap-5 w-full mt-10">
                 <div className="border-b w-full text-center text-5xl text-stone-600">
-                  <p className="w-4/5 mx-auto">7 Pages to Marian's Heart</p>
+                  <p className="w-4/5 mx-auto">
+                    7 Pages to Marian&apos;s Heart
+                  </p>
                 </div>
               </div>
               <div className="leading-10 flex gap-5 w-full mt-2">
