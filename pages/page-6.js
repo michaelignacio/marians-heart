@@ -2,6 +2,7 @@ import log from '../data/page-6'
 import Page from '../components/page'
 import featured from '../public/umaapaw.png'
 import bujoPic from '../public/capy.jpg'
+import Head from 'next/head';
 
 const spotify = (
   <iframe
@@ -16,5 +17,19 @@ const spotify = (
 );
 
 export default function Page6() {
-  return <Page log={log} spotify={spotify} pageNum="6" bujoPic={bujoPic} featured={featured} />;
+  return (
+    <>
+      <Head>
+        <title>Marian's Heart - Page 6</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Page
+        log={log}
+        spotify={spotify}
+        pageNum="6"
+        bujoPic={bujoPic}
+        featured={featured}
+      />
+    </>
+  );
 }

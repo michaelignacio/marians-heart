@@ -1,6 +1,7 @@
 import log from '../data/page-1'
-import Page from '../components/page'
 import featured from '../public/this-love.png';
+import Page from '../components/page';
+import Head from 'next/head';
 
 const spotify = (
   <iframe
@@ -15,5 +16,14 @@ const spotify = (
 );
 
 export default function Page1() {
-  return <Page log={log} spotify={spotify} featured={featured} pageNum="1" />;
+  return (
+    <>
+      <Head>
+        <title>Marian's Heart - Page 1
+        </title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Page log={log} spotify={spotify} featured={featured} pageNum="1" />
+    </>
+  );
 }

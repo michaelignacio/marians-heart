@@ -2,6 +2,7 @@ import log from '../data/page-3'
 import Page from '../components/page'
 import featured from '../public/keeper.png'
 import bujoPic from '../public/first-date.jpg'
+import Head from 'next/head';
 
 const spotify = (
   <iframe
@@ -16,5 +17,19 @@ const spotify = (
 );
 
 export default function Page3() {
-  return <Page log={log} spotify={spotify} featured={featured} pageNum="3" bujoPic={bujoPic} />;
+  return (
+    <>
+      <Head>
+        <title>Marian's Heart - Page 3</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Page
+        log={log}
+        spotify={spotify}
+        featured={featured}
+        pageNum="3"
+        bujoPic={bujoPic}
+      />
+    </>
+  );
 }
