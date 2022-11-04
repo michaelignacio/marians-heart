@@ -16,7 +16,7 @@ const days = [
       },
       {
         indicator: '-',
-        name: "she\'s single!",
+        name: "she\'s still single!",
       },
       {
         indicator: '-',
