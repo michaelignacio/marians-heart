@@ -1,7 +1,7 @@
 import log from '../data/page-7'
 import Page from '../components/page'
 import bujoPic from '../public/fam-pic.jpg';
-import featured from '../public/dog.jpg';
+import featured from '../public/marian.jpg';
 
 const spotify = (
   <iframe
