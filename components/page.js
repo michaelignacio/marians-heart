@@ -12,11 +12,12 @@ export default function Page({ log, spotify, featured, pageNum, bujoPic, bujoCla
             </Link>
             {log.map((day) => {
               return (
-                <div className="flex flex-col mb-5">
+                <div className="flex flex-col mb-5" key={day.date}>
                   <div className="mb-5">{day.date}</div>
-                  {day.items.map((item) => {
+                  {day.items.map((item, i) => {
                     return (
                       <div
+                        key={i}
                         className={`flex w-full border-b border-dotted 
                             ${
                               item.indicator == 'x'
