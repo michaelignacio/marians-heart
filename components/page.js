@@ -24,14 +24,20 @@ export default function Page({ log, spotify, featured, pageNum, bujoPic, bujoCla
                                 ? 'line-through text-gray-400'
                                 : ''
                             }
-                            ${item.indicator == '*' ? 'text-red-600 ml-1' : ''}
-                            ${item.indicator == '-' ? 'text-sky-400 ml-1' : ''}
+                            ${item.indicator == '*' ? 'text-red-600' : ''}
+                            ${item.indicator == '-' ? 'text-sky-400' : ''}
+                            ${item.indicator == '•' ? 'relative -left-2' : ''}
                         `}
                       >
-                        <div className="w-12 text-center leading-10">
+                        <div className={`leading-10 w-10 text-left`}>
                           {item.indicator}
                         </div>
-                        <div className={`grow leading-10`}>{item.name}</div>
+                        <div
+                          className={`grow leading-10
+                            ${item.indicator == '•' ? 'relative -left-2' : ''}`}
+                        >
+                          {item.name}
+                        </div>
                       </div>
                     );
                   })}
