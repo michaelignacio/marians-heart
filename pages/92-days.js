@@ -19,9 +19,9 @@ export default function DaysOfMarian() {
                   <div className="border-b w-full text-center text-5xl text-stone-600">
                     <p className="w-4/5 mx-auto">
                       <p className="text-3xl">
-                        You know how I'm so captivated by you that I want
+                        You know how I&apos;m so captivated by you that I want
                         to profess my love for you across all mediums and platforms?
-                        Here's another one:
+                        Here&apos;s another one:
                       </p>
                       <Image
                         src={marian}
