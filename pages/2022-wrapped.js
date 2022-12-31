@@ -278,7 +278,7 @@ const stories = [
 
 export default function Wrapped() {
   return (
-    <div className="h-screen flex items-center justify-center">
+    <div className="lg:h-screen lg:flex items-center lg:justify-center">
       <Head>
         <title>Duckie Wrapped 2022</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -286,8 +286,8 @@ export default function Wrapped() {
       <Stories
         stories={stories}
         defaultInterval={10000}
-        width={432}
-        height={768}
+        width={412}
+        height={914}
         loop
       />
     </div>
